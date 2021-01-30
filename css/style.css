@@ -129,3 +129,16 @@ nav ul li a:hover, a.active{
     background-color: white;
     margin-left: 5px;
 }
+
+#purchased-history{
+    display: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px green;
+    background-color: white;
+    text-align: center;
+    height: 100px;
+    padding-top: 25px;
+    color:rgb(60, 177, 138);
+    text-shadow: 2px 2px 8px #51ff00;
+    
+}

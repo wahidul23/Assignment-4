@@ -27,7 +27,7 @@
     </header>
 
     <!--Booking Section-->
-    <main class="main-content container">
+    <main  class="main-content container">
 
         <div class="booking-content">
             <h1>Mega City Bus</h1>
@@ -35,7 +35,7 @@
         </div>
 
 
-        <div class="booking-form">
+        <div id="booking-area" class="booking-form">
             <h3>Explore By Bus</h3>
 
             <div class="inputs">
@@ -108,7 +108,10 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button id="book-btn" class="btn-style">Book Now</button>
+        </div>
+        <div id="purchased-history">
+            <h1>You have succesfully Purchased Tickets!</h1>
         </div>
     </main>
 
@@ -162,6 +165,16 @@
 
             return ticketCount;
         }
+
+        // book btn modification
+
+        const bookingBtn = document.getElementById('book-btn');
+        bookingBtn.addEventListener('click', function(){
+            const bookingArea = document.getElementById('booking-area');
+            bookingArea.style.display = 'none';
+            const purchasedHistory = document.getElementById('purchased-history');
+            purchasedHistory.style.display = 'block';
+        })
        
     </script>
 
