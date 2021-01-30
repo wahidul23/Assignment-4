@@ -122,3 +122,10 @@ nav ul li a:hover, a.active{
     display: flex;
     justify-content: space-between;
 }
+.btn-modification{
+    font-size: 30px;
+    color: blue;
+    border-style: none;
+    background-color: white;
+    margin-left: 5px;
+}
